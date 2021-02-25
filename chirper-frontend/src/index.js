@@ -1,5 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Timeline from './components/Timeline'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Index = () =>{
+    return(
+        <>
+        <App />
+        <div className="container">
+        <Timeline />
+        </div>
+        </>
+    )
+}
+
+ReactDOM.render(<Index />, document.getElementById('root'));
